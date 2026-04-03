@@ -7,26 +7,29 @@ def is_Palindrome(s: str) -> bool:
             filtered += ch.lower()
 
     return filtered == filtered[::-1]
-s = " "
+s = "abcd"
 print(is_Palindrome(s))
 
 #Optimized Approach Tc = O(n), Sc = O(1)
 def isPalindrome(s):
+
     left = 0
     right = len(s) - 1
-
+    
     while left < right:
+        
         while left < right and not s[left].isalnum():
             left += 1
+            
         while left < right and not s[right].isalnum():
             right -= 1
-
+            
         if s[left].lower() != s[right].lower():
             return False
-
+    
         left += 1
-        right -= 1
-
+        right -=1
+        
     return True
 
 s = "A man, a plan, a canal: Panama"
