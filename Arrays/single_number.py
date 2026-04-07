@@ -1,4 +1,4 @@
-#Brute Force Approach Tc = O(n^2), Sc = O(n) 
+#Brute Force Approach Tc = O(n^2), Sc = O(1) 
 def singleNumber(nums):
     
     for i in range(len(nums)):
