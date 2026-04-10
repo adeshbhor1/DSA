@@ -31,7 +31,7 @@ def majorityElements(nums):
         else:
             count -= 1
         
-        if nums.count(candidate) > len(nums) // 2:
+    if nums.count(candidate) > len(nums) // 2:
             return candidate
         
     return "No majority elements"
