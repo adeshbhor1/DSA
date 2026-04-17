@@ -10,5 +10,3 @@ def sortedSquare(num):
 num = [-4,-1,0,3,10]
 
 print(sortedSquare(num))
-
-
